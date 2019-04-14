@@ -4,29 +4,44 @@
     <meta charset="utf-8">
     <meta https-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website</title>
+    <title>Emma Atkinson</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" rel="stylesheet">
     <link rel="stylesheet" href="sanitize.css"><!-- cross-browser compatibility -->
     <link rel="stylesheet" href="style.css"><!-- our stylesheet -->
   </head>
   <body>
 
+    <div class = "aside">
     <!-- Side navigation -->
+    <h1 class="logo"><a href="#"><span>Emma</span><span>Atkinson</span></a></h1>
       <nav class="mysidenav">
-        <a class="navbar-brand" href="#">
+        <!--<a class="navbar-brand" href="#">
           <img src="logo.jpg" width="30" height="30" alt="">
-        </a>
-        <a href="#">Home</a>
+        </a>-->
+        <a href="#" class="nav-active">Home</a>
         <a href="#">Work</a>
         <a href="#">Bio</a>
         <a href="#">Contact</a>
       </nav>
 
+      <div class = "icons">
+        <ul>
+          <li>Emma Atkinson | </li>
+          <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          <li>Copyright &copy; 2019</li>
+        </ul>
+      </div>
+
+
+    </div>
+
 <!-- Page content -->
   <div class="mymain">
-    <div class="container-fluid">
+    <div class="container-flex">
       <div class = "row">
         <div class = "col">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -71,16 +86,36 @@
       </div>
 
       <div class= "row">
-        <div class = "col"> <img src="logo.jpg" height="20%" alt=""> </div>
-        <div class = "col"> </div>
-        <div class = "col logo"> Hello </div>
+        <div class = "col-4"> <img src="self-image.jpg" width="120%" alt=""> </div>
+        <div class = "col-8">
+          <h1> Hi! My name is Emma Atkinson </h1>
+          <p> I'm a digital arts student based in New York. </p>
+        </div>
       </div>
+
+      <div class= "row">
+        <div class = "col"> <img src="logo.jpg" height="20%" alt=""> </div>
+        <div class = "col md-auto"> Heyyyyy </div>
+        <div class = "col"> Hello </div>
+      </div>
+
+      <div class= "row">
+        <div class = "col-4"> <img src="logo.jpg" height="20%" alt=""> </div>
+        <div class = "col-8"> Hi </div>
+      </div>
+
 
 </div>
 
 <!--
     <footer>
-      <p>&copy; 2019 Emma Atkinson &nbsp;|&nbsp;.</p>
+      <p>&copy; 2019 Emma Atkinson &nbsp;|&nbsp; .</p>
+      <ul>
+        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+        <li><a href="#"><i class="icon-vimeo"></i></a></li>
+        <li><a href="#"><i class="icon-instagram"></i></a></li>
+        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+      </ul>
     </footer>
 
 
