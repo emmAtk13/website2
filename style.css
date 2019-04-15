@@ -159,8 +159,12 @@ body{
   padding: 0 0 5em 0;
   margin: 0;
 }
-.second{
+.no-pad{
   padding: 0 0 0 0;
+  margin: 0;
+}
+.bottom-pad{
+  padding: 0 0 1em 0;
   margin: 0;
 }
 
@@ -256,7 +260,9 @@ body{
 .work .work-info{
   padding-left: 470px;
   width: 100%;
+  z-index: 1;
 }
+
 .work .video-right{
   position: absolute;
   top: 0;
@@ -274,4 +280,44 @@ body{
 .two{
   text-align: right;
   float:right;
+}
+
+.gallery{
+  padding: .5em;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:1em;
+  margin-bottom: 2em;
+}
+
+.thumb{
+  background-size: cover;
+  background-position:center center;
+  padding-bottom: 56%;
+  border-radius: 4px 4px 0 0;
+}
+
+.one{  background-image: url('color1.jpg');}
+
+.work:hover .work-info{
+display:;
+
+}
+
+
+@media screen and (min-width: 1280px) { /*-- better modal display on largest screens --*/
+  .modal-body {grid-template-columns: 7fr 5fr;}
+
+}
+
+@media screen and (max-width: 1250px) {
+  .gallery{grid-template-columns: repeat(3,1fr);}
+}
+
+@media screen and (max-width: 960px) {
+  .gallery{grid-template-columns: repeat(2,1fr);}
+}
+
+@media screen and (max-width: 600px) {
+  .gallery{grid-template-columns: 1fr;}
 }
