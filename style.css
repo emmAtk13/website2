@@ -101,6 +101,8 @@ body{
   text-align: right;
 }
 
+
+
 /*icons at bottom of nav menu*/
 .icons{
   position: absolute;
@@ -137,18 +139,28 @@ body{
   transition: 0.3s;
 }
 
-/* On smaller screens, where height is less than 468px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 468px) {
-  .mysidenav {padding-top: 15px;}
-  .mysidenav a {font-size: 16px;}
-  .carousel-caption{width:200px;}
 
-}
 
 /* Style page content */
 .mymain {
   margin-left: 20%; /* Same as the width of the sidebar */
   padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 468px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 720px) {
+  .aside {
+    display:none;
+  }
+  .mymain{
+    margin-left:0%;
+    padding: 5px 5px;
+  }
+  .carousel-indicators{
+    display:none;
+  }
+  /*.mysidenav a {font-size: 16px;}
+  .carousel-caption{width:200px;}*/
 }
 
 .col{
@@ -305,20 +317,26 @@ display:;
 
 }
 
-
-@media screen and (min-width: 1280px) { /*-- better modal display on largest screens --*/
-  .modal-body {grid-template-columns: 7fr 5fr;}
-
-}
-
-@media screen and (max-width: 1250px) {
-  .gallery{grid-template-columns: repeat(3,1fr);}
-}
-
-@media screen and (max-width: 960px) {
   .gallery{grid-template-columns: repeat(2,1fr);}
 }
 
 @media screen and (max-width: 600px) {
   .gallery{grid-template-columns: 1fr;}
+}
+
+
+::-webkit-selection {
+  color: #fff;
+  border-color:#FF5E5B;
+  background-color:#FF5E5B;
+}
+::-moz-selection {
+  color: #fff;
+  border-color:#FF5E5B;
+  background-color:#FF5E5B;
+}
+::selection {
+  color: #fff;
+  border-color:#FF5E5B;
+  background-color:#FF5E5B;
 }
