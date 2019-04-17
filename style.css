@@ -74,6 +74,11 @@ body{
    -o-transform: scaleX(1);
    transform: scaleX(1);
  }
+@media screen and (max-width: 1260px) {
+ .mysidenav ul li a {
+   font-size: 14px;
+ }
+}
 
 /*logo for name*/
 .logo{
@@ -101,6 +106,24 @@ body{
   text-align: right;
 }
 
+.hidden{
+  display: none;
+}
+
+.current{
+  display:block;
+}
+
+@media screen and (max-width: 1260px) {
+  .hidden {
+    display:block;
+  }
+
+  .current{
+    display:none;
+  }
+}
+
 
 
 /*icons at bottom of nav menu*/
@@ -109,7 +132,7 @@ body{
   bottom: 40px;
   right: 1.5em;
   left: 1.5em;
-  font-size: 15px;
+  font-size: 14px;
   text-align: right;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
@@ -139,7 +162,11 @@ body{
   transition: 0.3s;
 }
 
-
+@media screen and (max-width: 1260px) {
+  .icons{
+    font-size: 10px;
+  }
+}
 
 /* Style page content */
 .mymain {
@@ -255,9 +282,9 @@ body{
   width: 100%;
   float: left;
   margin-bottom: 40px;
-  padding-top:10px;
+  padding-top:0px;
   position: relative;
-  background-color: lightgrey;
+  background-color: lightblue;
 }
 .work .work-video{
   position: absolute;
@@ -311,14 +338,26 @@ body{
 }
 
 .one{  background-image: url('color1.jpg');}
+.three{  background-image: url('color2.jpg');}
 
-.work:hover .work-info{
-display:;
-
+.thumb:hover{
+  opacity: 0.4;
+  /*transform: scale(1.00);
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2),
+              -2px 0px 12px rgba(0,0,0,0.2);
+              */
 }
 
-  .gallery{grid-template-columns: repeat(2,1fr);}
+.modal-open .modal-body img{
+  padding:0px;
+  margin:0px;
+  width:100%;
 }
+
+.modal-dialogue{
+	width: 100%;
+}
+
 
 @media screen and (max-width: 600px) {
   .gallery{grid-template-columns: 1fr;}
