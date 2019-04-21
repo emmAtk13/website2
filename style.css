@@ -162,7 +162,7 @@ body{
   transition: 0.3s;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1280px) {
   .icons{
     font-size: 10px;
   }
@@ -244,6 +244,42 @@ body{
 .carousel-indicators .active{
   background-color: #FF5E5B;
   border:3px solid #FF5E5B;
+}
+
+.hidden-bio-img{
+  display:none;
+}
+
+@media screen and (max-width: 1280px) {
+  .carousel-caption{
+    padding-left: 10px;
+    width: 300px;
+    height: 175px;
+  }
+  .carousel-indicators{
+      top:80%;
+      height:50px;
+      right:40px;
+      width:50px;
+    }
+  .hidden-bio-img{
+    display:block;
+  }
+  .normal{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .carousel-caption{
+    width: 275px;
+    height: 170px;
+  }
+  .carousel-indicators{
+      height:40px;
+      right:30px;
+      width:40px;
+    }
 }
 
 .skill{
@@ -346,6 +382,14 @@ body{
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2),
               -2px 0px 12px rgba(0,0,0,0.2);
               */
+}
+
+.clip-content{
+    display: none;
+}
+
+.thumb:hover .clip-content{
+  display: block;
 }
 
 .modal-open .modal-body img{
