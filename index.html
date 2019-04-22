@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta https-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Emma Atkinson</title>
+    <title>Emma P. Atkinson</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" rel="stylesheet">
@@ -17,9 +17,22 @@
   <body>
 
     <div class="top-small">
+  <div class="collapse fixed-top" id="navbarToggleExternalContent">
+    <div class="bg-whip p-4">
+      <nav class="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item active"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">Work</a></li>
+          <li class="nav-item"><a href="#resume">Resume</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
       <nav class="navbar fixed-top">
-        <a class="navbar-brand" href="#">
-          <img src="logo2.jpg" width="30" height="30" alt="">
+        <a class="navbar-brand navbar-toggler" href="#" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img class = "navbar-toggler-icon" src="logo2.jpg" width="30" height="30" alt="">
         </a>
       </nav>
     </div>
@@ -53,6 +66,7 @@
 
     </div>
 
+
 <!-- Page content -->
   <div class="mymain">
     <div class="container-flex">
@@ -67,26 +81,26 @@
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="4000">
               <img src="ifonly-slide.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-none d-sm-block">
                 <h3>Interactive Media</h3>
                 <p>virtual reality and code based applications.</p>
-                <p><a class="btn btn-outline-secondary">See More<i class="fas fa-chevron-right"></i></a></p>
+                <p><button class="btn btn-send">See More<i class="fas fa-chevron-right"></i></button></p>
               </div>
             </div>
             <div class="carousel-item" data-interval="4000">
               <img src="inthedark-slide.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-none d-sm-block">
                 <h3>Animations</h3>
                 <p>a mix of 3D and 2D computer graphics.</p>
-                <p><a class="btn btn-outline-secondary">See More<i class="fas fa-chevron-right"></i></a></p>
+                <p><button class="btn btn-send">See More<i class="fas fa-chevron-right"></i></button></p>
               </div>
             </div>
             <div class="carousel-item" data-interval="4000">
               <img src="cerberus-slide.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-none d-sm-block">
                 <h3>Digital Graphics</h3>
                 <p>2D and 3D digital paintings.</p>
-                <p><a class="btn btn-outline-secondary">See More<i class="fas fa-chevron-right"></i></a></p>
+                <p><button class="btn btn-send">See More<i class="fas fa-chevron-right"></i></button></p>
               </div>
             </div>
           </div>
@@ -107,74 +121,78 @@
       <h1>Welcome</h1>
       <div class= "row">
         <div class="hidden-bio">
-           <img src="logo.jpg" width="100%" alt="">
+           <img src="self3a.jpg" width="100%" alt="">
         </div>
         <div class = "hidden-bio">
+          <div class="typing">
           <h1> Hi! My name is Emma Atkinson </h1>
-          <p> I'm a digital arts student based in New York. </p>
+        </div>
+          <p> I'm a digital arts student based in new york, interested in the haptic communication of virtual reality and games.  Through animations and interactions, I focus on creating narratives as a means for experiences with the user. I like to explore the concept of communication and the connotations that people create through their experiences that shape their perception. Currently, I am a senior at Clarkson University, dual majoring in Digital Arts & Sciences and Communication with a minor in mathematics.</p>
           <div id="accordion">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="btn btn-acc collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     What I Do
                   </button>
                 </h5>
               </div>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    I blend together the technical and artistic sides of new and emerging media, creating a unique experience. With a strong knowledge of coding (C++/C#/Java) and a solid design background, anything is possible.
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button class="btn btn-acc collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     My Specialities
                   </button>
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  Specialties range from game design, virtual reality experiences, user experience design, graphic design, motion graphics, animation, film production and screenwriting.
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class = "col-4 normal">
-           <img src="logo.jpg" width="120%" alt="">
+           <img src="self3a.jpg" width="120%" alt="">
          </div>
         <div class = "col-8 normal">
+          <div class="typing">
           <h1> Hi! My name is Emma Atkinson </h1>
-          <p> I'm a digital arts student based in New York. </p>
+        </div>
+          <p> I'm a digital arts student based in new york, interested in the haptic communication of virtual reality and games.  Through animations and interactions, I focus on creating narratives as a means for experiences with the user. I like to explore the concept of communication and the connotations that people create through their experiences that shape their perception. Currently, I am a senior at Clarkson University, dual majoring in Digital Arts & Sciences and Communication with a minor in mathematics.</p>
           <div id="accordion">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="btn btn-acc collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     What I Do
                   </button>
                 </h5>
               </div>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  I blend together the technical and artistic sides of new and emerging media, creating a unique experience. With a strong knowledge of coding (C++/C#/Java) and a solid design background, anything is possible.
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button class="btn btn-acc collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     My Specialities
                   </button>
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  Specialties range from game design, virtual reality experiences, user experience design, graphic design, motion graphics, animation, film production and screenwriting.
                 </div>
               </div>
             </div>
@@ -393,39 +411,10 @@
             <div class="modal-content">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <div class="modal-body">
-                  <iframe src="https://player.vimeo.com/video/302641014" width="760" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
           </div>
-
-        <div class="work" data-toggle="modal" data-target=".modalTwo-lg">
-          <div class="thumb three"></div>
-        </div>
-        <div class="modal fade modalTwo-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <div class="modal-body">
-              <iframe src="https://player.vimeo.com/video/310713003" width="760" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="work" data-toggle="modal" data-target=".modalThree-lg">
-        <div class="thumb four"></div>
-      </div>
-    <div class="modal fade modalThree-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <div class="modal-body">
-            <iframe src="https://player.vimeo.com/video/305373519" width="760" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="work" data-toggle="modal" data-target=".modalFour-lg">
       <div class="thumb five"></div>
@@ -435,144 +424,193 @@
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <div class="modal-body">
-          <iframe src="https://player.vimeo.com/video/305373569" width="760" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
         </div>
       </div>
     </div>
   </div>
 
-  <div class="work" data-toggle="modal" data-target=".modalFive-lg">
-    <div class="thumb six"></div>
-  </div>
-<div class="modal fade modalFive-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      <div class="modal-body">
-        <iframe src="https://player.vimeo.com/video/305373676" width="720" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="container-fluid">
+  <h3> animations </h3>
+    <div class="gallery">
+
+      <div class="work" data-toggle="modal" data-target=".modalFive-lg">
+        <div class="thumb five"></div>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="work" data-toggle="modal" data-target=".modalSix-lg">
-  <div class="thumb seven"></div>
-</div>
-<div class="modal fade modalSix-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
-  <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-    <div class="modal-body">
-      <iframe src="https://player.vimeo.com/video/305373805" width="760" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-</div>
-
-
-</div>
-</div>
-
-
-  <div class="container-fluid">
-    <h3> animations </h3>
-      <div class="gallery">
-        <div class="work" data-toggle="modal" data-target=".modalOne-lg">
-          <div class="thumb one">
-          </div>
-        </div>
-        <div class="modal fade modalOne-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="color1.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--
-        <div id="01" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-body">
-              <img src="color2.jpg" alt="example" />
-              <div class="eg-text">
-                <h3>Project name</h3>
-                <p>insert project description</p>
-              </div>
-          -->
-        <div class="work" data-toggle="modal" data-target=".modalTwo-lg">
-          <div class="thumb three"></div>
-        </div>
-      <div class="modal fade modalTwo-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal fade modalFive-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <div class="modal-body">
-              <img src="color2.jpg" alt="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+<iframe src="https://player.vimeo.com/video/310713003" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="work" data-toggle="modal" data-target=".modalTwo-lg">
-        <div class="thumb three"></div>
+      <div class="work" data-toggle="modal" data-target=".modalSix-lg">
+        <div class="thumb six"></div>
       </div>
-    <div class="modal fade modalTwo-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
+      <div class="modal fade modalSix-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
           <div class="modal-body">
-            <img src="color2.jpg" alt="">
+          <iframe src="https://player.vimeo.com/video/305373519" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="work" data-toggle="modal" data-target=".modalTwo-lg">
-      <div class="thumb three"></div>
+    <div class="work" data-toggle="modal" data-target=".modalSeven-lg">
+      <div class="thumb seven"></div>
     </div>
-  <div class="modal fade modalTwo-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal fade modalSeven-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <div class="modal-body">
-          <img src="color2.jpg" alt="">
+<iframe src="https://player.vimeo.com/video/305373569" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="work" data-toggle="modal" data-target=".modalTwo-lg">
-    <div class="thumb three"></div>
+  <div class="work" data-toggle="modal" data-target=".modalEight-lg">
+    <div class="thumb eight"></div>
   </div>
-<div class="modal fade modalTwo-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal fade modalEight-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
       <div class="modal-body">
-        <img src="color2.jpg" alt="">
+<iframe src="https://player.vimeo.com/video/305373676" width="640" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="work" data-toggle="modal" data-target=".modalNine-lg">
+  <div class="thumb nine"></div>
+</div>
+<div class="modal fade modalNine-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <div class="modal-body">
+<iframe src="https://player.vimeo.com/video/305373805" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="work" data-toggle="modal" data-target=".modalTen-lg">
+  <div class="thumb ten"></div>
+</div>
+<div class="modal fade modalTen-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <div class="modal-body">
+
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <h3> digital graphics </h3>
+    <div class="gallery">
+
+      <div class="work" data-toggle="modal" data-target=".modalThirteen-lg">
+        <div class="thumb thirteen"></div>
+      </div>
+      <div class="modal fade modalThirteen-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+              <img src="cerberus.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="work" data-toggle="modal" data-target=".modalFourteen-lg">
+        <div class="thumb fourteen"></div>
+      </div>
+      <div class="modal fade modalFourteen-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <div class="modal-body">
+          <img src="images/abstract_three.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work" data-toggle="modal" data-target=".modalFifteen-lg">
+      <div class="thumb fifteen"></div>
+    </div>
+  <div class="modal fade modalFifteen-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <div class="modal-body">
+          <img src="images/color_mountain.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="work" data-toggle="modal" data-target=".modalSixteen-lg">
+    <div class="thumb sixteen"></div>
+  </div>
+<div class="modal fade modalSixteen-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <div class="modal-body">
+        <img src="images/combo1.jpg">
       </div>
     </div>
   </div>
 </div>
 
-<div class="work" data-toggle="modal" data-target=".modalTwo-lg">
-  <div class="thumb three"></div>
+<div class="work" data-toggle="modal" data-target=".modalSeventeen-lg">
+  <div class="thumb seventeen"></div>
 </div>
-<div class="modal fade modalTwo-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal fade modalSeventeen-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
   <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     <div class="modal-body">
-      <img src="color2.jpg" alt="">
+      <img src="images/combo2.jpg">
     </div>
   </div>
 </div>
 </div>
 
+<div class="work" data-toggle="modal" data-target=".modalEighteen-lg">
+  <div class="thumb eighteen"></div>
+</div>
+<div class="modal fade modalEighteen-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <div class="modal-body">
+      <img src="images/rgb.jpg">
+    </div>
+  </div>
+</div>
+</div>
 
 </div>
 </div>
@@ -671,6 +709,7 @@
 </div>
 
 <h1><a name="contact">Get in Touch</a></h1>
+<div class="current">
 <div class="row">
     <div class="col-6">
       <form>
@@ -688,7 +727,7 @@
         <input type="message" id="message" class="form-control" placeholder="Message">
         </div>
     </div>
-    <button class="btn btn-light">Send Message!</button>
+    <button class="btn btn-send">Send Message!</button>
     </form>
   </div>
   <div class="col-6">
@@ -716,6 +755,55 @@
     </div>
   </div>
 </div>
+</div>
+
+
+<div class="col">
+  <div class="row hidden">
+      <form>
+    <div class="form-group">
+      <div class="row bottom-pad">
+          <input type="name" id="name" class="form-control" placeholder="Name">
+      </div>
+      <div class="row bottom-pad">
+          <input type="email" id="email" class="form-control" placeholder="Email">
+        </div>
+      <div class="row bottom-pad">
+          <input type="phone" id="phone" class="form-control" placeholder="Phone">
+        </div>
+      <div class="row bottom-pad">
+        <input type="message" id="message" class="form-control" placeholder="Message">
+        </div>
+    </div>
+    <button class="btn btn-send">Send Message!</button>
+    </form>
+  </div>
+  <div class="hidden no-pad">
+    <div class="row no-pad">
+      <div class="skill">
+        <div class="skill-pic">
+          <i class="fas fa-paper-plane"></i>
+        </div>
+        <div class="skill-info">
+          <h4>Email</h4>
+          <p>insert skill here. brief desrciption of skill to be done. Blah blah blah blah blah blah</p>
+        </div>
+      </div>
+    </div>
+    <div class="row bottom-pad">
+      <div class="skill">
+        <div class="skill-pic">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <div class="skill-info">
+          <h4>Location</h4>
+          <p>insert skill here. brief desrciption of skill to be done. Blah blah blah blah blah blah</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 </div>

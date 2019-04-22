@@ -2,6 +2,28 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+.nav-item{
+  padding-bottom:.5em;
+  text-transform: lowercase;
+}
+
+.navbar-nav ul li{
+  list-style: none;
+}
+
+.navbar-nav a{
+  color: black;
+}
+
+.navbar-nav a:hover{
+  color: #FF5E5B;
+  text-decoration: none;
+}
+
+.nav-item ul li.active a{
+  color: #FF5E5B;
+}
+
 .aside{
   padding: 3em;
   width: 20%;
@@ -194,9 +216,7 @@ body{
     margin-left:0%;
     padding: 5px 5px;
   }
-  .carousel-indicators{
-    display:none;
-  }
+
   .top-small{
     display:block;
   }
@@ -313,12 +333,12 @@ body{
   height: 110px;
   display: table;
   text-align: center;
-  background: papayawhip;
+  background: #FF928B;
 }
 .skill .skill-pic i{
   display: table-cell;
   vertical-align: middle;
-  color: #FF928B;
+  color: papayawhip;
   font-size: 40px;
   height: 110px;
 }
@@ -391,12 +411,25 @@ body{
   border-radius: 4px 4px 0 0;
 }
 
+/*interactive media*/
 .one{  background-image: url('ifonly01.png');}
-.three{  background-image: url('inthedark01.png');}
-.four{  background-image: url('walkcycle01.png');}
-.five{  background-image: url('tiptoecycle01.png');}
-.six{  background-image: url('character01.png');}
-.seven{  background-image: url('voiceover01.png');}
+
+
+/*animations*/
+.five{  background-image: url('inthedark01.png');}
+.six{  background-image: url('walkcycle01.png');}
+.seven{  background-image: url('tiptoecycle01.png');}
+.eight{  background-image: url('character01.png');}
+.nine{  background-image: url('voiceover01.png');}
+.ten{  background-image: url('voiceover01.png');}
+
+/*digital*/
+.thirteen { background-image: url('cerberus.jpg');}
+.fourteen { background-image: url('images/abstract_three.jpg');}
+.fifteen { background-image: url('images/color_mountain.jpg');}
+.sixteen { background-image: url('images/combo1.jpg');}
+.seventeen { background-image: url('images/combo2.jpg');}
+.eighteen { background-image: url('images/rgb.jpg');}
 
 .thumb:hover{
   opacity: 0.4;
@@ -452,9 +485,79 @@ body{
   margin-right: auto;
 }
 
+.form-control{
+  border: 1px solid #FF928B;
+}
+
+.form-control::placeholder{
+  color: #FF928B;
+}
+
 footer {
   background-color: #FF5E5B;
-  padding: 1em;
+  padding: 1.5em;
   color: papayawhip;
-  text-align: center;
+  text-align: right;
+  padding-right: 10em;
+}
+
+.p-4{
+  height: 200px;
+}
+
+.bg-whip{
+  background-color:papayawhip;
+}
+
+.card{
+  background-color: #FF928B;
+  border:none;
+  margin-bottom: 2px;
+}
+
+.card-header{
+  border:none;
+  background-color:none;
+}
+
+.card-body{
+  background-color:papayawhip;
+}
+
+.btn-acc{
+  background-color: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.btn-acc:hover{
+  color: papayawhip;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.btn-send{
+  background-color: #FF928B;
+  font-size: 18px;
+  color: white;
+  float:left;
+}
+
+.btn-send:hover{
+  background-color: #FF5E5B;
+  color:papayawhip;
+}
+
+.typing{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingAnim 5s steps(50);
+}
+
+@keyframes typingAnim{
+  from { width: 0 }
+  to { width: 100% }
 }
