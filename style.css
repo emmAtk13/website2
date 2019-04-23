@@ -280,6 +280,16 @@ body{
   border:3px solid #FF5E5B;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: papayawhip;
+  text-decoration: none;
+}
+
 .hidden-bio{
   display:none;
 }
