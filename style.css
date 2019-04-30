@@ -343,7 +343,7 @@ a:hover {
   height: 110px;
   display: table;
   text-align: center;
-  background: #FF928B;
+  background: #FF5E5B;
 }
 .skill .skill-pic i{
   display: table-cell;
@@ -366,7 +366,7 @@ a:hover {
   margin-bottom: 40px;
   padding-top:0px;
   position: relative;
-  background-color: #FF5E5B;
+  background-color: #FF928B;
 }
 .work .work-video{
   position: absolute;
@@ -416,7 +416,7 @@ a:hover {
 
 .thumb{
   background-size: cover;
-  background-position:center center;
+  background-position: center center;
   padding-bottom: 56%;
   border-radius: 4px 4px 0 0;
 }
@@ -442,11 +442,35 @@ a:hover {
 .eighteen { background-image: url('images/rgb.jpg');}
 
 .thumb:hover{
-  opacity: 0.4;
+  opacity: 0.6;
   /*transform: scale(1.00);
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2),
               -2px 0px 12px rgba(0,0,0,0.2);
               */
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  color: white;
+  padding: 4px 8px;
+}
+
+.dark{
+  color: black;
+}
+
+.thumb:hover .middle{
+  opacity: 1;
 }
 
 .clip-content{
