@@ -292,6 +292,7 @@ a:hover {
 
 .hidden-bio{
   display:none;
+  max-width:100%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -363,7 +364,7 @@ a:hover {
   text-align: left;
   width: 100%;
   float: left;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-top:0px;
   position: relative;
   background-color: #FF928B;
@@ -407,11 +408,11 @@ a:hover {
 }
 
 .gallery{
-  padding: .5em;
+  padding: .25em;
   display:grid;
   grid-template-columns:repeat(2,1fr);
   grid-gap:1em;
-  margin-bottom: 2em;
+
 }
 
 .thumb{
@@ -461,8 +462,9 @@ a:hover {
 }
 
 .text {
-  color: white;
+  color: papayawhip;
   padding: 4px 8px;
+  background-color: #FF5E5B;
 }
 
 .dark{
@@ -585,6 +587,28 @@ footer {
   color:papayawhip;
 }
 
+.form-control:focus{
+  border-color: #FFAC81;
+  box-shadow: 0 0 0 .2rem rgba(255, 172, 129, .25)
+}
+
+.subtitle{
+  font-size: 14px;
+  color: #546A7B;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+}
+
+.title{
+  font-size: 20px;
+  color: #0D1F2D;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 1em;
+  font-weight: 400;
+}
+
+/*--
 .typing{
   overflow: hidden;
   white-space: nowrap;
@@ -595,3 +619,4 @@ footer {
   from { width: 0 }
   to { width: 100% }
 }
+--*/
