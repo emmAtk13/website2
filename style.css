@@ -307,7 +307,7 @@ a:hover {
   .carousel-caption{
     padding-left: 10px;
     width: 300px;
-    height: 175px;
+    margin: 0%;
   }
   .carousel-indicators{
       top:80%;
@@ -320,7 +320,7 @@ a:hover {
 @media screen and (max-width: 960px) {
   .carousel-caption{
     width: 275px;
-    height: 170px;
+    height: 180px;
   }
   .carousel-indicators{
       height:40px;
@@ -333,6 +333,40 @@ a:hover {
     .normal{
       display:none;
     }
+}
+
+@media screen and (max-width: 560px) {
+  .carousel-caption{
+    width: 175px;
+    height: 100px;
+  }
+  .carousel-caption h3{
+    font-size: 18px;
+  }
+  .carousel-caption p{
+    font-size: 14px;
+  }
+  .carousel-indicators{
+      height:30px;
+      right:20px;
+      width:30px;
+    }
+    .carousel-caption .btn-send{
+      display:none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+  .carousel-caption{
+    width: 150px;
+    height: 95px;
+  }
+  .carousel-caption h3{
+    font-size: 14px;
+  }
+  .carousel-caption p{
+    font-size: 12px;
+  }
 }
 
 .skill{
@@ -676,8 +710,6 @@ footer {
   font-weight: 400;
 }
 
-.js .animate-box {
-  opacity: 0; }
 
 /*--
 .typing{
