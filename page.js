@@ -11,7 +11,6 @@ function navToggle() { // creates a new function named navToggle
 
 
 
-
 // Get the container element
 //$( '.aside .mysidenav a' ).on( 'click', function () {
 //	$( '.aside .mysidenav' ).find( 'nav-active' ).removeClass( 'nav-active' );
