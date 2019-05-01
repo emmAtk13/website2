@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" rel="stylesheet">
     <link rel="stylesheet" href="sanitize.css"><!-- cross-browser compatibility -->
     <link rel="stylesheet" href="style.css"><!-- our stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <link rel="shortcut icon" href="logo2.jpg">
 
@@ -31,7 +32,7 @@
     </div>
   </div>
       <nav class="navbar fixed-top">
-        <a class="navbar-brand navbar-toggler" href="#" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-brand navbar-toggler topnav-toggle" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <img class = "navbar-toggler-icon" src="logo2.jpg" width="30" height="30" alt="">
         </a>
       </nav>
@@ -41,15 +42,15 @@
     <!-- Side navigation -->
     <h1 class="logo current"><a href="#"><span>Emma</span><span>Atkinson</span></a></h1>
     <h1 class="logo hidden"><a href="#"><span>E</span><span>A</span></a></h1>
-      <nav class="mysidenav">
+      <nav class="mysidenav" id="myScrollspy">
         <ul>
         <!--<a class="navbar-brand" href="#">
           <img src="logo.jpg" width="30" height="30" alt="">
         </a>-->
           <li class="nav-active"><a href="#">Home</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class><a href="#work">Work</a></li>
+          <li class><a href="#resume">Resume</a></li>
+          <li class><a href="#contact">Contact</a></li>
         <ul>
       </nav>
 
@@ -68,7 +69,7 @@
 
 
 <!-- Page content -->
-  <div class="mymain">
+  <div class="mymain" data-spy="scroll" id="myScrollspy" data-offset="50">
     <div class="container-flex">
       <div class="row">
         <div class="col">
@@ -81,7 +82,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="4000">
               <img src="ifonly-slide.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-sm-block">
+              <div class="carousel-caption d-none d-sm-block animated fadeInUp">
                 <h3>Interactive Media</h3>
                 <p>virtual reality and code based applications.</p>
                 <p><button class="btn btn-send"><a href="#work">See More<i class="fas fa-chevron-right"></i></a></button></p>
@@ -89,7 +90,7 @@
             </div>
             <div class="carousel-item" data-interval="4000">
               <img src="inthedark-slide.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-sm-block">
+              <div class="carousel-caption d-none d-sm-block animated fadeInUp">
                 <h3>Animations</h3>
                 <p>a mix of 3D and 2D computer graphics.</p>
                 <p><button class="btn btn-send"><a href="#work">See More<i class="fas fa-chevron-right"></i></a></button></p>
@@ -97,7 +98,7 @@
             </div>
             <div class="carousel-item" data-interval="4000">
               <img src="cerberus-slide.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-sm-block">
+              <div class="carousel-caption d-none d-sm-block animated fadeInUp">
                 <h3>Digital Graphics</h3>
                 <p>2D and 3D digital paintings.</p>
                 <p><button class="btn btn-send"><a href="#work">See More<i class="fas fa-chevron-right"></i></a></button></p>
@@ -159,10 +160,10 @@
             </div>
           </div>
         </div>
-        <div class = "col-4 normal">
+        <div class = "col-4 normal revealOnScroll animated fadeInLeft">
            <img src="self3a.jpg" width="120%" alt="">
          </div>
-        <div class = "col-8 normal">
+        <div class = "col-8 normal animated fadeInRightBig">
           <div class="typing">
           <h1> Hi! My name is Emma Atkinson </h1>
         </div>
@@ -247,7 +248,7 @@
       </div>
       <div class="skill-info">
         <h4>Game Design</h4>
-        <p>Structure, design, narrative, development and art</p>
+        <p>Structure, design, narrative, development, art and animation</p>
       </div>
     </div>
   </div>
@@ -301,7 +302,7 @@
     </div>
     </div>
     <div class= "row no-pad">
-      <div class = "col-6 normal">
+      <div class = "col-6 normal animated fadeInLeft">
       <div class="skill">
         <div class="skill-pic">
           <i class="fas fa-cubes"></i>
@@ -312,7 +313,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 normal">
+    <div class="col-6 normal animated fadeInLeft">
       <div class="skill">
         <div class="skill-pic">
           <i class="fas fa-video"></i>
@@ -325,7 +326,7 @@
     </div>
     </div>
     <div class= "row no-pad">
-    <div class="col-6 normal">
+    <div class="col-6 normal animated fadeInLeft">
       <div class="skill">
         <div class="skill-pic">
           <i class="fas fa-vr-cardboard"></i>
@@ -336,20 +337,20 @@
         </div>
       </div>
     </div>
-    <div class="col-6 normal">
+    <div class="col-6 normal animated fadeInLeft">
     <div class="skill">
       <div class="skill-pic">
         <i class="fas fa-gamepad"></i>
       </div>
       <div class="skill-info">
         <h4>Game Design</h4>
-        <p>Structure, design, narrative, development and art</p>
+        <p>Structure, design, narrative, development, art and animation</p>
       </div>
     </div>
   </div>
     </div>
     <div class="row no-pad">
-      <div class="col-6 normal">
+      <div class="col-6 normal animated fadeInLeft">
       <div class="skill">
         <div class="skill-pic">
           <i class="fas fa-film"></i>
@@ -360,7 +361,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 normal">
+    <div class="col-6 normal animated fadeInLeft">
       <div class="skill">
         <div class="skill-pic">
           <i class="fas fa-palette"></i>
@@ -373,7 +374,7 @@
     </div>
     </div>
     <div class= "row no-pad">
-      <div class = "col-6 normal">
+      <div class = "col-6 normal animated fadeInLeft">
       <div class="skill">
         <div class="skill-pic">
           <i class="fas fa-desktop"></i>
@@ -384,7 +385,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 normal">
+    <div class="col-6 normal animated fadeInLeft">
       <div class="skill">
         <div class="skill-pic">
           <i class="fas fa-users"></i>
@@ -399,17 +400,25 @@
   </div>
 
 
-  <div class="container-fluid">
-    <h1 class="subtitle"><a name="work">Work</a></h1>
+  <div id="work" class="container-fluid">
+    <h1 class="subtitle"><a id="work">Work</a></h1>
     <h3 class="title">interactive media</h3>
       <div class="gallery">
 
         <div class="work" data-toggle="modal" data-target=".modalZero-lg">
           <div class="thumb one">
             <div class="middle">
-              <div class="text dark">
-                <h4>(if) only you could understand (2019)</h4>
-                <p>virtual reality and coding</p>
+              <div class="text">
+                <h5>(if) only you could understand (2019)</h5>
+                <p class="no-pad">virtual reality and coding</p>
+              </div>
+            </div>
+            <div class="right-icons">
+              <div class="text">
+                <p class="no-pad"><i class="fas fa-code side-pad"></i>
+                <i class="fas fa-vr-cardboard side-pad"></i>
+                <i class="fas fa-language"></i>
+              </p>
               </div>
             </div>
           </div>
@@ -419,31 +428,138 @@
             <div class="modal-content">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row no-pad">
+                      <iframe src="https://player.vimeo.com/video/302641014" width="740" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <div class="row no-pad">
+                      <h4>(if) only you could understand</h4>
+                      <p>(if) only you could understand is a virtual reality poem by Emma Atkinson, whose passages are furthered by interactivity. Gesture-based interactions of words in these passages forwards the progression of each phrase. Words take on literal meaning, but can also take on connotative ideas through their interactivity. Actions trigger events through grabbing and touching. The monochromatic white look highlights the visual aspect of language via each floating stanza which evolves throughout the experience:</p>
+                      <p class="poem bottom-pad">You Twist my words<br>
+                      Things Change<br>
+                      But I can only Bend so far<br>
+                      Days turn into Night<br>
+                      There is always More<br>
+                      I can feel the Distance<br>
+                      You can Break me<br>
+                      But only I can Destroy me</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-    <div class="work" data-toggle="modal" data-target=".modalFour-lg">
-      <div class="thumb five">
+    <div class="work" data-toggle="modal" data-target=".modalOne-lg">
+      <div class="thumb two">
         <div class="middle">
           <div class="text">
-            <h4>cerberus (2017)</h4>
-            <p>photoshop and imagery</p>
+            <h5>all the words (i never said) (2019)</h5>
+            <p class="no-pad">virtual reality and coding</p>
+          </div>
+        </div>
+        <div class="right-icons">
+          <div class="text">
+            <p class="no-pad"><i class="fas fa-code side-pad"></i>
+            <i class="fas fa-vr-cardboard side-pad"></i>
+            <i class="fas fa-language"></i>
+          </p>
           </div>
         </div>
       </div>
     </div>
-  <div class="modal fade modalFour-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal fade modalOne-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <div class="modal-body">
-
+          <div class="container-fluid">
+            <div class="row no-pad">
+              <img src="images/VR_Rain.png">
+            </div>
+            <div class="row no-pad">
+              <h4>all the words (i never said)</h4>
+              <p>An extension of the language study. all the words (i never said) is an interactive piece that looks at the physicality of words and breaks it down to its simplest structure. The perception of language at its simplest is letters, and the connection between the letter and its corresponding speech sound is a concept that can be broken at its basis.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="work" data-toggle="modal" data-target=".modalTwo-lg">
+    <div class="thumb three">
+      <div class="middle">
+        <div class="text">
+          <h5>breathe (2018)</h5>
+          <p class="no-pad">narrative video game</p>
+        </div>
+      </div>
+      <div class="right-icons">
+        <div class="text">
+          <p class="no-pad"><i class="fas fa-code side-pad"></i>
+          <i class="fas fa-gamepad side-pad"></i>
+          <i class="fab fa-app-store"></i>
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade modalTwo-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row no-pad">
+            <img src="images/game_comp.jpg">
+          </div>
+          <div class="row no-pad">
+            <h4>breathe</h4>
+            <p>breathe is a heavily narrative video game that focuses on the story of my diagnosis with asthma my freshman year of college. Simple interactions using the mouse and keypad help to drive the narrative forward in a flow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="work" data-toggle="modal" data-target=".modalThree-lg">
+  <div class="thumb four">
+    <div class="middle">
+      <div class="text">
+        <h5>abstract art machine (2016)</h5>
+        <p class="no-pad">coding and art</p>
+      </div>
+    </div>
+    <div class="right-icons">
+      <div class="text">
+        <p class="no-pad"><i class="fas fa-code side-pad"></i>
+        <i class="fas fa-palette side-pad"></i>
+        <i class="fas fa-random"></i>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modalThree-lg" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <div class="modal-body">
+      <div class="container-fluid">
+        <div class="row no-pad">
+          <img src="images/ArtMachines.jpg">
+        </div>
+        <div class="row no-pad">
+          <h4>abstract art machine</h4>
+          <p>Utilizing the programming language Processing, the art machine code generates a unique and abstract geometric artwork with each separate iteration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 </div>
 </div>
@@ -455,9 +571,17 @@
       <div class="work" data-toggle="modal" data-target=".modalFive-lg">
         <div class="thumb five">
           <div class="middle">
-            <div class="text dark">
-              <h4>in the dark (2017)</h4>
-              <p>3D modeling in Maya</p>
+            <div class="text">
+              <h5>in the dark (2017)</h5>
+              <p class="no-pad">3D modeling in Maya</p>
+            </div>
+          </div>
+          <div class="right-icons">
+            <div class="text">
+              <p class="no-pad"><i class="fas fa-video side-pad"></i>
+              <i class="fas fa-cubes side-pad"></i>
+              <i class="fas fa-palette"></i>
+            </p>
             </div>
           </div>
         </div>
@@ -467,7 +591,16 @@
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <div class="modal-body">
-                <iframe class="video" src="https://player.vimeo.com/video/310713003" max-width="640" max-height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <div class="container-fluid">
+                  <div class="row no-pad">
+                    <iframe src="https://player.vimeo.com/video/310713003" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                  </div>
+                  <div class="row no-pad">
+                    <h4>in the dark</h4>
+                    <p>This abstract video draws attention to the interplay and connection between light and dark. Even though it is a simulated environment, the relationship of light needing dark to be created and the lack of light creating darkness still exists. Unique and intriguing patterns are created and destroyed through this exchange.</p>
+                    <p>(Audio is Fantasy -Orchestral Version by VIXX)</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -476,9 +609,17 @@
       <div class="work" data-toggle="modal" data-target=".modalSix-lg">
         <div class="thumb six">
           <div class="middle">
-            <div class="text dark">
-              <h4>standard walk cycle (2018)</h4>
-              <p>Typical walk cycle with humanoid character walking in place, surrounded by geometric objects.</p>
+            <div class="text">
+              <h5>standard walk cycle (2018)</h5>
+              <p class="no-pad">3D character rig in Maya</p>
+            </div>
+          </div>
+          <div class="right-icons">
+            <div class="text">
+              <p class="no-pad"><i class="fas fa-video side-pad"></i>
+              <i class="fas fa-cubes side-pad"></i>
+              <i class="fas fa-walking"></i>
+            </p>
             </div>
           </div>
         </div>
@@ -488,7 +629,15 @@
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
           <div class="modal-body">
-          <iframe src="https://player.vimeo.com/video/305373519" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div class="container-fluid">
+              <div class="row no-pad">
+                <iframe src="https://player.vimeo.com/video/305373519" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
+              <div class="row no-pad">
+                <h4>standard walk cycle</h4>
+                <p>Typical walk cycle with humanoid character walking in place, surrounded by geometric objects.​​​​​​​</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -497,9 +646,17 @@
     <div class="work" data-toggle="modal" data-target=".modalSeven-lg">
       <div class="thumb seven">
         <div class="middle">
-          <div class="text dark">
-            <h4>modified walk cycle (2018)</h4>
-            <p>Variation of walk cycle with humanoid character tiptoeing around fantasy stylized objects.</p>
+          <div class="text">
+            <h5>modified walk cycle (2018)</h5>
+            <p class="no-pad">3D character rig in Maya</p>
+          </div>
+        </div>
+        <div class="right-icons">
+          <div class="text">
+            <p class="no-pad"><i class="fas fa-video side-pad"></i>
+            <i class="fas fa-cubes side-pad"></i>
+            <i class="fas fa-walking"></i>
+          </p>
           </div>
         </div>
       </div>
@@ -509,7 +666,15 @@
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <div class="modal-body">
-<iframe src="https://player.vimeo.com/video/305373569" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <div class="container-fluid">
+            <div class="row no-pad">
+              <iframe src="https://player.vimeo.com/video/305373569" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="row no-pad">
+              <h4>modified walk cycle</h4>
+              <p>Variation of walk cycle with humanoid character tiptoeing around fantasy stylized objects.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -519,8 +684,16 @@
     <div class="thumb eight">
       <div class="middle">
         <div class="text">
-          <h4>custom character (2018)</h4>
-          <p>Custom character with humanoid rig on a spinning tabletop. The character displays several unique poses and different customized accessories.</p>
+          <h5>custom character (2018)</h5>
+          <p class="no-pad">3D custom character in Maya</p>
+        </div>
+      </div>
+      <div class="right-icons">
+        <div class="text">
+          <p class="no-pad"><i class="fas fa-video side-pad"></i>
+          <i class="fas fa-cubes side-pad"></i>
+          <i class="fas fa-male"></i>
+        </p>
         </div>
       </div>
     </div>
@@ -530,7 +703,15 @@
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
       <div class="modal-body">
-<iframe src="https://player.vimeo.com/video/305373676" width="640" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="container-fluid">
+          <div class="row no-pad">
+            <iframe src="https://player.vimeo.com/video/305373676" width="640" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <div class="row no-pad">
+            <h4>custom character</h4>
+            <p>Custom character with humanoid rig on a spinning tabletop. The character displays several unique poses and different customized accessories.</p>
+          </div>
+        </div>
     </div>
   </div>
 </div>
@@ -540,8 +721,16 @@
   <div class="thumb nine">
     <div class="middle">
       <div class="text">
-        <h4>facial animation one (2018)</h4>
-        <p>Humanoid facial rig animated to a quote from “Ghost in the Shell” featuring deforming objects in the background.</p>
+        <h5>facial animation one (2017)</h5>
+        <p class="no-pad">3D facial rig in Maya</p>
+      </div>
+    </div>
+    <div class="right-icons">
+      <div class="text">
+        <p class="no-pad"><i class="fas fa-video side-pad"></i>
+        <i class="fas fa-cubes side-pad"></i>
+        <i class="fas fa-smile"></i>
+      </p>
       </div>
     </div>
   </div>
@@ -551,7 +740,15 @@
   <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     <div class="modal-body">
-<iframe src="https://player.vimeo.com/video/305373805" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="container-fluid">
+        <div class="row no-pad">
+          <iframe src="https://player.vimeo.com/video/305373805" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="row no-pad">
+          <h4>facial animation one</h4>
+          <p>Humanoid facial rig animated to a quote from “Ghost in the Shell” featuring deforming objects in the background.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -561,8 +758,16 @@
   <div class="thumb ten">
     <div class="middle">
       <div class="text">
-        <h4>facial animation two (2018)</h4>
-        <p>Humanoid facial rig animated to a quote from “Ghost in the Shell” featuring geometric objects in the background.</p>
+        <h5>facial animation two (2017)</h5>
+        <p class="no-pad">3D facial rig in Maya</p>
+      </div>
+    </div>
+    <div class="right-icons">
+      <div class="text">
+        <p class="no-pad"><i class="fas fa-video side-pad"></i>
+        <i class="fas fa-cubes side-pad"></i>
+        <i class="fas fa-smile"></i>
+      </p>
       </div>
     </div>
   </div>
@@ -572,7 +777,15 @@
   <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     <div class="modal-body">
-
+      <div class="container-fluid">
+        <div class="row no-pad">
+          <iframe src="https://player.vimeo.com/video/305373772" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="row no-pad">
+          <h4>facial animation two</h4>
+          <p>Humanoid facial rig animated to a quote from “Ghost in the Shell” featuring geometric objects in the background.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -589,8 +802,16 @@
         <div class="thumb thirteen">
           <div class="middle">
             <div class="text">
-              <h4>cerberus (2017)</h4>
-              <p>photoshop and imagery</p>
+              <h5>cerberus (2017)</h5>
+              <p class="no-pad">photoshop and imagery</p>
+            </div>
+          </div>
+          <div class="right-icons">
+            <div class="text">
+              <p class="no-pad"><i class="fas fa-palette side-pad"></i>
+              <i class="fas fa-paint-brush side-pad"></i>
+              <i class="far fa-image"></i>
+            </p>
             </div>
           </div>
         </div>
@@ -600,7 +821,14 @@
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <div class="modal-body">
-              <img src="cerberus.jpg">
+                <div class="container-fluid">
+                  <div class="row no-pad">
+                    <img src="cerberus.jpg">
+                  </div>
+                  <div class="row no-pad">
+                    <h4>cerberus</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -610,8 +838,16 @@
         <div class="thumb fourteen">
           <div class="middle">
             <div class="text">
-              <h4>breezy day (2017)</h4>
-              <p>photoshop</p>
+              <h5>breezy day (2017)</h5>
+              <p class="no-pad">photoshop</p>
+            </div>
+          </div>
+          <div class="right-icons">
+            <div class="text">
+              <p class="no-pad"><i class="fas fa-palette side-pad"></i>
+              <i class="fas fa-paint-brush side-pad"></i>
+              <i class="far fa-image"></i>
+            </p>
             </div>
           </div>
         </div>
@@ -621,7 +857,14 @@
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
           <div class="modal-body">
-          <img src="images/abstract_three.jpg">
+            <div class="container-fluid">
+              <div class="row no-pad">
+                <img src="images/abstract_three.jpg">
+              </div>
+              <div class="row no-pad">
+                <h4>breezy day</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -631,8 +874,16 @@
       <div class="thumb fifteen">
         <div class="middle">
           <div class="text">
-            <h4>color mountain (2017)</h4>
-            <p>photoshop</p>
+            <h5>color mountain (2017)</h5>
+            <p class="no-pad">photoshop</p>
+          </div>
+        </div>
+        <div class="right-icons">
+          <div class="text">
+            <p class="no-pad"><i class="fas fa-palette side-pad"></i>
+            <i class="fas fa-paint-brush side-pad"></i>
+            <i class="far fa-image"></i>
+          </p>
           </div>
         </div>
       </div>
@@ -642,7 +893,14 @@
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <div class="modal-body">
-          <img src="images/color_mountain.jpg">
+          <div class="container-fluid">
+            <div class="row no-pad">
+              <img src="images/color_mountain.jpg">
+            </div>
+            <div class="row no-pad">
+              <h4>color mountain</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -652,8 +910,16 @@
     <div class="thumb sixteen">
       <div class="middle">
         <div class="text">
-          <h4>dark desires (2017)</h4>
-          <p>photoshop</p>
+          <h5>dark desires (2017)</h5>
+          <p class="no-pad">photoshop</p>
+        </div>
+      </div>
+      <div class="right-icons">
+        <div class="text">
+          <p class="no-pad"><i class="fas fa-palette side-pad"></i>
+          <i class="fas fa-paint-brush side-pad"></i>
+          <i class="far fa-image"></i>
+        </p>
         </div>
       </div>
     </div>
@@ -663,7 +929,14 @@
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
       <div class="modal-body">
-        <img src="images/combo1.jpg">
+        <div class="container-fluid">
+          <div class="row no-pad">
+            <img src="images/combo1.jpg">
+          </div>
+          <div class="row no-pad">
+            <h4>dark desires</h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -673,8 +946,16 @@
   <div class="thumb seventeen">
     <div class="middle">
       <div class="text">
-        <h4>light inspires (2017)</h4>
-        <p>photoshop</p>
+        <h5>light inspires (2017)</h5>
+        <p class="no-pad">photoshop</p>
+      </div>
+    </div>
+    <div class="right-icons">
+      <div class="text">
+        <p class="no-pad"><i class="fas fa-palette side-pad"></i>
+        <i class="fas fa-paint-brush side-pad"></i>
+        <i class="far fa-image"></i>
+      </p>
       </div>
     </div>
   </div>
@@ -684,7 +965,14 @@
   <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     <div class="modal-body">
-      <img src="images/combo2.jpg">
+      <div class="container-fluid">
+        <div class="row no-pad">
+          <img src="images/combo2.jpg">
+        </div>
+        <div class="row no-pad">
+          <h4>light inspires</h4>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -694,8 +982,16 @@
   <div class="thumb eighteen">
     <div class="middle">
       <div class="text">
-        <h4>rgb (2017)</h4>
-        <p>photoshop</p>
+        <h5>rgb (2017)</h5>
+        <p class="no-pad">photoshop</p>
+      </div>
+    </div>
+    <div class="right-icons">
+      <div class="text">
+        <p class="no-pad"><i class="fas fa-palette side-pad"></i>
+        <i class="fas fa-paint-brush side-pad"></i>
+        <i class="far fa-image"></i>
+      </p>
       </div>
     </div>
   </div>
@@ -705,7 +1001,14 @@
   <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     <div class="modal-body">
-      <img src="images/rgb.jpg">
+      <div class="container-fluid">
+        <div class="row no-pad">
+          <img src="images/rgb.jpg">
+        </div>
+        <div class="row no-pad">
+          <h4>rgb</h4>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -822,7 +1125,7 @@
 
 <h1 class="subtitle"><a name="contact">contact</a></h1>
 <h3 class="title">get in touch</h3>
-<div class="current">
+<div class="normal">
 <div class="row">
     <div class="col-6">
       <form>
@@ -872,7 +1175,7 @@
 
 
 <div class="col">
-  <div class="row hidden">
+  <div class="row hidden-bio">
       <form>
     <div class="form-group">
       <div class="row bottom-pad">
@@ -891,29 +1194,29 @@
     <button class="btn btn-send">Send Message!</button>
     </form>
   </div>
-  <div class="hidden no-pad">
-    <div class="row no-pad">
-      <div class="skill">
-        <div class="skill-pic">
-          <i class="fas fa-paper-plane"></i>
-        </div>
-        <div class="skill-info">
-          <h4>Email</h4>
-          <p>All emails will be sent to emma.p.atkinson@gmail.com</p>
-        </div>
+  <div class= "row bottom-pad">
+  <div class="hidden-bio">
+    <div class="skill">
+      <div class="skill-pic">
+        <i class="fas fa-paper-plane"></i>
+      </div>
+      <div class="skill-info">
+        <h4>Emails</h4>
+        <p>All messages will be sent to emma.p. atkinson@gmail .com</p>
       </div>
     </div>
-    <div class="row bottom-pad">
-      <div class="skill">
-        <div class="skill-pic">
-          <i class="fas fa-map-marked-alt"></i>
-        </div>
-        <div class="skill-info">
-          <h4>Location</h4>
-          <p>Currently located in Upstate New York</p>
-        </div>
-      </div>
+  </div>
+  <div class="hidden-bio">
+  <div class="skill">
+    <div class="skill-pic">
+      <i class="fas fa-map-marked-alt"></i>
     </div>
+    <div class="skill-info">
+      <h4>Location</h4>
+      <p>Currently located in Upstate New York</p>
+    </div>
+  </div>
+  </div>
   </div>
 </div>
 

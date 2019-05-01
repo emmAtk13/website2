@@ -98,7 +98,7 @@ body{
  }
 @media screen and (max-width: 1280px) {
  .mysidenav ul li a {
-   font-size: 14px;
+   font-size: 12px;
  }
 }
 
@@ -198,17 +198,25 @@ body{
 }
 
 .fixed-top{
-  background-color:papayawhip
+  background-color:papayawhip;
 }
+
+.topnav-toggle {
+  background-color: papayawhip;
+  border: 1px solid papayawhip;
+}
+
+
 
 /* Style page content */
 .mymain {
   margin-left: 20%; /* Same as the width of the sidebar */
   padding: 0px 10px;
+  position: relative;
 }
 
 /* On smaller screens, where height is less than 468px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
   .aside {
     display:none;
   }
@@ -401,12 +409,12 @@ a:hover {
   padding-right: 470px;
   width: 100%;
 }
-
+/*--
 .two{
   text-align: right;
   float:right;
 }
-
+--*/
 .gallery{
   padding: .25em;
   display:grid;
@@ -424,7 +432,9 @@ a:hover {
 
 /*interactive media*/
 .one{  background-image: url('ifonly01.png');}
-
+.two{ background-image: url('images/VR_Rain.PNG');}
+.three{ background-image: url('images/game_comp.jpg');}
+.four { background-image: url('images/ArtMachines.jpg');}
 
 /*animations*/
 .five{  background-image: url('inthedark01.png');}
@@ -454,11 +464,24 @@ a:hover {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 30%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
+  width: 300px;
+  word-wrap: break-word;
+}
+
+.right-icons {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: right;
 }
 
 .text {
@@ -467,12 +490,47 @@ a:hover {
   background-color: #FF5E5B;
 }
 
-.dark{
-  color: black;
-}
-
 .thumb:hover .middle{
   opacity: 1;
+}
+
+.thumb:hover .right-icons{
+  opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .middle{
+    width: 200px;
+  }
+  .text{
+    padding: 2px 4px;
+  }
+  .text h5{
+    font-size: 1.1em;
+  }
+  .text p{
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .thumb:hover .right-icons{
+    opacity: 0;
+  }
+  .middle{
+    top: 50%;
+    left: 50%;
+    width: 150px;
+  }
+  .text{
+    padding: 2px 4px;
+  }
+  .text h5{
+    font-size: .95em;
+  }
+  .text p{
+    font-size: .75em;
+  }
 }
 
 .clip-content{
@@ -481,6 +539,16 @@ a:hover {
 
 .thumb:hover .clip-content{
   display: block;
+}
+
+.side-pad{
+  padding-right:.5em;
+}
+
+.poem{
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .modal-open .modal-body img{
@@ -607,6 +675,9 @@ footer {
   padding-bottom: 1em;
   font-weight: 400;
 }
+
+.js .animate-box {
+  opacity: 0; }
 
 /*--
 .typing{

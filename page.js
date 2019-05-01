@@ -10,6 +10,14 @@ function navToggle() { // creates a new function named navToggle
 } //
 
 
+
+
+// Get the container element
+//$( '.aside .mysidenav a' ).on( 'click', function () {
+//	$( '.aside .mysidenav' ).find( 'nav-active' ).removeClass( 'nav-active' );
+//	$( this ).parent( 'li' ).addClass( 'nav-active' );
+//});
+
 //$(".thumb").on("click", function() { // when item with class of button is clicked, fire function
 //  var modal = $(this).data("modal"); // sets modal var equal to data attribute
 //  $(modal).show(); // opens up modal (much code hidden here by jQuery)
