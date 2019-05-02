@@ -477,6 +477,8 @@ a:hover {
 .eight{  background-image: url('character01.jpg');}
 .nine{  background-image: url('voiceover01.jpg');}
 .ten{  background-image: url('images/voiceover2.jpg');}
+.eleven{  background-image: url('everyday01.jpg');}
+.twelve { background-image: url('cat01.PNG')}
 
 /*digital*/
 .thirteen { background-image: url('cerberus.jpg');}
@@ -485,6 +487,7 @@ a:hover {
 .sixteen { background-image: url('images/combo1.jpg');}
 .seventeen { background-image: url('images/combo2.jpg');}
 .eighteen { background-image: url('images/rgb.jpg');}
+
 
 .thumb:hover{
   opacity: 0.6;
