@@ -465,18 +465,18 @@ a:hover {
 }
 
 /*interactive media*/
-.one{  background-image: url('ifonly01.png');}
-.two{ background-image: url('images/VR_Rain.PNG');}
+.one{  background-image: url('ifonly01.jpg');}
+.two{ background-image: url('images/VR_Rain.jpg');}
 .three{ background-image: url('images/game_comp.jpg');}
 .four { background-image: url('images/ArtMachines.jpg');}
 
 /*animations*/
-.five{  background-image: url('inthedark01.png');}
-.six{  background-image: url('walkcycle01.png');}
-.seven{  background-image: url('tiptoecycle01.png');}
-.eight{  background-image: url('character01.png');}
-.nine{  background-image: url('voiceover01.png');}
-.ten{  background-image: url('images/voiceover2.png');}
+.five{  background-image: url('inthedark01.jpg');}
+.six{  background-image: url('walkcycle01.jpg');}
+.seven{  background-image: url('tiptoecycle01.jpg');}
+.eight{  background-image: url('character01.jpg');}
+.nine{  background-image: url('voiceover01.jpg');}
+.ten{  background-image: url('images/voiceover2.jpg');}
 
 /*digital*/
 .thirteen { background-image: url('cerberus.jpg');}
