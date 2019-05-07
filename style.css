@@ -1,5 +1,6 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 
 .nav-item{
@@ -36,13 +37,30 @@ body{
 }
 
 /* nav menu sidebar */
-.mysidenav {
+.aside .mysidenav {
   text-align: right;
   margin: 0;
   padding: 0;
   text-transform: lowercase;
 }
-.mysidenav ul li a {
+
+.aside .mysidenav ul {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.aside .mysidenav ul li {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.aside .mysidenav ul li a {
   padding: 6px 0px 16px 16px;
   text-align:right;
   text-decoration: none;
@@ -54,28 +72,8 @@ body{
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.mysidenav ul {
-  text-align: right;
-  margin: 0;
-  padding: 0;
-}
-.mysidenav ul li {
-  margin: 0 0 10px 0;
-  padding: 0;
-  list-style: none;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: lowercase;
-  letter-spacing: 1px;
-}
-.mysidenav ul li a:hover {
-  color: #FF5E5B;
-  text-decoration: none;
-}
-.mysidenav ul li a:hover::after {
-  visibility: visible;
-}
-.mysidenav ul li a::after {
+
+.aside .mysidenav ul li a::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -85,10 +83,19 @@ body{
   background-color: #0D1F2D;
   visibility: hidden;
 }
-.mysidenav ul li.nav-active a {
+
+.aside .mysidenav ul li a:hover {
+  color: #FF5E5B;
+  text-decoration: none;
+}
+.aside .mysidenav ul li a:hover::after {
+  visibility: visible;
+}
+
+.aside .mysidenav ul li.nav-active a {
   color: #FF5E5B;
 }
- .mysidenav ul li.nav-active a::after {
+ .aside .mysidenav ul li.nav-active a::after {
    visibility: visible;
    -webkit-transform: scaleX(1);
    -moz-transform: scaleX(1);
@@ -401,54 +408,6 @@ a:hover {
 }
 
 
-
-.work{
-  text-align: left;
-  width: 100%;
-  float: left;
-  margin-bottom: 20px;
-  padding-top:0px;
-  position: relative;
-  background-color: #FF928B;
-}
-.work .work-video{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 450px;
-  height: 300px;
-  display: table;
-  text-align: center;
-  background: #FF5E5B;
-  border-radius: 4px 4px 0 0;
-}
-.work .work-info{
-  padding-left: 470px;
-  width: 100%;
-  z-index: 1;
-}
-
-.work .video-right{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 450px;
-  height: 300px;
-  display: table;
-  text-align: center;
-  background: pink;
-  border-radius: 4px 4px 0 0;
-}
-.work .text-right{
-  padding-right: 470px;
-  width: 100%;
-}
-/*--
-.two{
-  text-align: right;
-  float:right;
-}
---*/
 .gallery{
   padding: .25em;
   display:grid;
@@ -570,14 +529,6 @@ a:hover {
   }
 }
 
-.clip-content{
-    display: none;
-}
-
-.thumb:hover .clip-content{
-  display: block;
-}
-
 .side-pad{
   padding-right:.5em;
 }
@@ -591,6 +542,7 @@ a:hover {
 .modal-open .modal-body img{
   padding:0px;
   margin:0px;
+  max-height:100%;
   width:100%;
 }
 
@@ -744,16 +696,8 @@ button.close:hover{
   opacity: 1;
 }
 
-
-/*--
-.typing{
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingAnim 5s steps(50);
+@media screen and (max-width: 1280px){
+  .img-responsive{
+    height: 100%;
+  }
 }
-
-@keyframes typingAnim{
-  from { width: 0 }
-  to { width: 100% }
-}
---*/
